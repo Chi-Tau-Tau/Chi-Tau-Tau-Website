@@ -1,0 +1,22 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Chi Tau Tau"
+theme = "ananke"
+
+[params]
+custom_css = ["css/custom.css"]
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+name = "Events"
+url = "/events/"
+weight = 3

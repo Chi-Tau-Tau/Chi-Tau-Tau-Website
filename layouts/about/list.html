@@ -1,0 +1,55 @@
+{{ define "main" }}
+
+<section class="about-hero">
+
+  <div class="about-hero-overlay">
+
+    <p class="section-label">ABOUT US</p>
+
+    <h1>CHI TAU TAU Chapter</h1>
+
+    <p class="about-hero-subtitle">
+      Omega Psi Phi Fraternity, Inc.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="history-section">
+
+  <div class="history-card">
+
+    <p class="section-label">OUR STORY</p>
+
+    <h2>CHI TAU TAU History</h2>
+
+    <div class="section-divider"></div>
+
+    {{ with .Site.GetPage "/about/history" }}
+      {{ .Content }}
+    {{ end }}
+
+  </div>
+
+</section>
+
+
+<section class="lineage-section">
+
+  <div class="lineage-card">
+
+    <h2>CHI TAU TAU Lineage</h2>
+
+    <div class="section-divider"></div>
+
+    {{ with .Site.GetPage "/about/lineage" }}
+      {{ .Content }}
+    {{ end }}
+
+  </div>
+
+</section>
+
+{{ end }}
