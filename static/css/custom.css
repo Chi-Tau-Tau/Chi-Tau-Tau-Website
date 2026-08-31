@@ -742,3 +742,158 @@ hr {
   line-height: 1.8;
 }
 
+/* ===== EVENTS PAGE ===== */
+
+.events-page-hero {
+  width: 100%;
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3b0066;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.events-page-hero-overlay {
+  width: min(1000px, 90%);
+  text-align: center;
+  padding: 80px 30px;
+}
+
+.events-page-hero h1 {
+  color: #d4af37 !important;
+  font-size: 58px !important;
+  margin: 15px 0;
+}
+
+.events-page-subtitle {
+  color: #d4af37 !important;
+  font-size: 26px !important;
+  margin: 0 auto !important;
+}
+
+
+/* ===== EVENTS CALENDAR ===== */
+
+.events-calendar-section {
+  width: 100%;
+  padding: 100px 30px;
+  box-sizing: border-box;
+  background: #4b0082;
+}
+
+.events-calendar-container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.events-calendar-container > h2 {
+  color: #d4af37 !important;
+  font-size: 48px !important;
+  margin-bottom: 25px;
+}
+
+.calendar {
+  margin-top: 50px;
+  padding: 40px;
+  background: #3b0066;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.calendar-header h3 {
+  color: #d4af37 !important;
+  font-size: 34px !important;
+  margin: 0;
+}
+
+.calendar-nav {
+  background: transparent;
+  border: none;
+  color: #d4af37;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.calendar-nav:hover {
+  color: white;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.calendar-day-name {
+  color: #d4af37;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 5px;
+}
+
+.calendar-day {
+  min-height: 90px;
+  padding: 12px;
+  box-sizing: border-box;
+  background: #4b0082;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+}
+
+.calendar-day:hover {
+  border-color: #d4af37;
+}
+
+.calendar-day.empty {
+  background: transparent;
+  border-color: transparent;
+}
+
+
+/* ===== MOBILE CALENDAR ===== */
+
+@media (max-width: 800px) {
+
+    .events-page-hero h1 {
+      font-size: 42px !important;
+    }
+
+    .events-page-subtitle {
+      font-size: 20px !important;
+    }
+
+    .calendar {
+      padding: 20px;
+    }
+
+    .calendar-grid {
+      gap: 5px;
+    }
+
+    .calendar-day {
+      min-height: 60px;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    .calendar-day-name {
+      font-size: 14px;
+    }
+
+    .calendar-header h3 {
+      font-size: 26px !important;
+    }
+}
