@@ -783,7 +783,7 @@ hr {
 }
 
 .events-calendar-container {
-  width: min(1100px, 92%);
+  width: min(1350px, 95%);
   margin: 0 auto;
   text-align: center;
 }
@@ -924,7 +924,7 @@ hr {
 }
 
 #calendar-grid .calendar-day {
-    min-height: 90px !important;
+    min-height: 125px !important;
     padding: 12px !important;
     box-sizing: border-box !important;
 
@@ -934,7 +934,7 @@ hr {
     border-radius: 10px !important;
 
     color: white !important;
-    font-size: 20px !important;
+    font-size: 24px !important;
 
     text-align: left !important;
 }
@@ -946,4 +946,95 @@ hr {
 #calendar-grid .calendar-day.empty {
     background: transparent !important;
     border-color: transparent !important;
+}
+
+/* ===== CALENDAR EVENT DAYS ===== */
+
+#calendar-grid .event-day {
+    background: #d4af37 !important;
+    border: 2px solid #d4af37 !important;
+    color: #4b0082 !important;
+    cursor: pointer;
+}
+
+#calendar-grid .event-day:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(212, 175, 55, 0.25);
+}
+
+#calendar-grid .event-day .day-number {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+#calendar-grid .event-day .event-title {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* ===== UPCOMING EVENTS CAROUSEL ===== */
+
+.upcoming-events-section {
+    max-width: 1000px;
+    margin: 70px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.upcoming-events-section h2 {
+    color: #d4af37;
+    margin-bottom: 30px;
+}
+
+.events-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.events-page-card {
+    width: 1000px;
+    padding: 20px;
+    border: 1px solid #d4af37;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.events-page-flyer img {
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+}
+
+.events-page-info h3 {
+    color: #d4af37;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.events-page-info p {
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+.event-arrow {
+    background: transparent;
+    border: none;
+    color: #d4af37;
+    font-size: 38px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.event-arrow:hover {
+    color: white;
 }

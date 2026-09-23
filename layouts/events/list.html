@@ -53,6 +53,38 @@
 
 </section>
 
+<!-- ===== UPCOMING EVENTS ===== -->
+<section class="upcoming-events-section">
+
+    <h2>Upcoming Events</h2>
+
+    <div class="events-carousel">
+
+        <button class="event-arrow" id="prev-event">&#10094;</button>
+
+        <div class="events-page-card">
+
+            <div class="events-page-flyer">
+                <img
+                    id="event-flyer"
+                    src="/images/Interest-meeting-flyer-sept-21st.PNG"
+                    alt="Interest Meeting Flyer"
+                >
+            </div>
+
+            <div class="events-page-info">
+                <h3 id="event-title">Interest Meeting</h3>
+                <p id="event-date"><strong>September 21, 2026</strong></p>
+            </div>
+
+        </div>
+
+        <button class="event-arrow" id="next-event">&#10095;</button>
+
+    </div>
+
+</section>
+
 <script>
   const calendarMonth = document.getElementById("calendar-month");
   const calendarGrid = document.getElementById("calendar-grid");
@@ -60,6 +92,23 @@
   const nextButton = document.getElementById("next-month");
 
   let currentDate = new Date(2026, 8, 1); // September 2026
+  
+ const events = {
+    "2026-09-21": {
+        title: "Interest Meeting",
+        flyer: "/images/Interest-meeting-flyer-sept-21st.PNG"
+    },
+
+    "2026-09-25": {
+        title: "Pageant Informational",
+        flyer: "/images/Pageant-flyer-25th.png"
+    },
+
+    "2026-10-20": {
+        title: "BARQ Radio",
+        flyer: "/images/BARQ-Radio.png"
+    }
+};
 
   function renderCalendar() {
     const year = currentDate.getFullYear();
@@ -96,8 +145,27 @@
     }
 
     for (let day = 1; day <= daysInMonth; day++) {
-      calendarGrid.innerHTML += `<div class="calendar-day">${day}</div>`;
+
+    const dateKey =
+        `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+
+    const event = events[dateKey];
+
+    if (event) {
+        calendarGrid.innerHTML += `
+            <div class="calendar-day event-day">
+                <span class="day-number">${day}</span>
+                <span class="event-title">${event.title}</span>
+            </div>
+        `;
+    } else {
+        calendarGrid.innerHTML += `
+            <div class="calendar-day">
+                <span class="day-number">${day}</span>
+            </div>
+        `;
     }
+}
   }
 
   prevButton.addEventListener("click", function() {
@@ -111,6 +179,65 @@
   });
 
   renderCalendar();
+
+  // ===== UPCOMING EVENTS CAROUSEL =====
+
+const upcomingEvents = [
+    {
+        title: "Interest Meeting",
+        date: "September 21, 2026",
+        flyer: "/images/Interest-meeting-flyer-sept-21st.PNG"
+    },
+    {
+        title: "Pageant Informational",
+        date: "September 25, 2026",
+        flyer: "/images/Pageant-flyer-25th.png"
+    },
+    {
+        title: "BARQ Radio",
+        date: "October 20, 2026",
+        flyer: "/images/BARQ-Radio.png"
+    }
+];
+
+let currentEventIndex = 0;
+
+const eventFlyer = document.getElementById("event-flyer");
+const eventTitle = document.getElementById("event-title");
+const eventDate = document.getElementById("event-date");
+const prevEventButton = document.getElementById("prev-event");
+const nextEventButton = document.getElementById("next-event");
+
+function showEvent(index) {
+    const event = upcomingEvents[index];
+
+    eventFlyer.src = event.flyer;
+    eventFlyer.alt = `${event.title} Flyer`;
+    eventTitle.textContent = event.title;
+    eventDate.innerHTML = `<strong>${event.date}</strong>`;
+}
+
+nextEventButton.addEventListener("click", function () {
+    currentEventIndex++;
+
+    if (currentEventIndex >= upcomingEvents.length) {
+        currentEventIndex = 0;
+    }
+
+    showEvent(currentEventIndex);
+});
+
+prevEventButton.addEventListener("click", function () {
+    currentEventIndex--;
+
+    if (currentEventIndex < 0) {
+        currentEventIndex = upcomingEvents.length - 1;
+    }
+
+    showEvent(currentEventIndex);
+});
+
+showEvent(currentEventIndex);
 </script>
 
 {{ end }}
