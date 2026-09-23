@@ -1038,3 +1038,127 @@ hr {
 .event-arrow:hover {
     color: white;
 }
+
+/* ========================================
+   MOBILE EVENTS PAGE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    /* ----- EVENTS SECTION ----- */
+
+    .events-calendar-section {
+        padding: 50px 10px !important;
+    }
+
+    .events-calendar-container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .events-calendar-container > h2 {
+        font-size: 30px !important;
+    }
+
+
+    /* ----- CALENDAR ----- */
+
+    .calendar {
+        width: 100% !important;
+        padding: 15px 8px !important;
+        margin-top: 30px !important;
+        box-sizing: border-box !important;
+    }
+
+    .calendar-header {
+        margin-bottom: 20px !important;
+    }
+
+    .calendar-header h3,
+    #calendar-month {
+        font-size: 20px !important;
+    }
+
+    .calendar-nav {
+        font-size: 24px !important;
+        padding: 8px !important;
+    }
+
+    #calendar-grid {
+        gap: 4px !important;
+        width: 100% !important;
+    }
+
+    #calendar-grid .calendar-day-name {
+        font-size: 11px !important;
+        padding: 6px 0 !important;
+    }
+
+    #calendar-grid .calendar-day {
+        min-height: 62px !important;
+        padding: 5px !important;
+        font-size: 13px !important;
+        border-radius: 6px !important;
+        overflow: hidden !important;
+    }
+
+    #calendar-grid .event-day .day-number {
+        font-size: 14px !important;
+        margin-bottom: 3px !important;
+    }
+
+    #calendar-grid .event-day .event-title {
+        font-size: 9px !important;
+        line-height: 1.1 !important;
+        overflow-wrap: anywhere !important;
+    }
+
+
+    /* ----- UPCOMING EVENTS ----- */
+
+    .upcoming-events-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 45px auto !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    .upcoming-events-section h2 {
+        font-size: 30px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .events-carousel {
+        width: 100% !important;
+        gap: 6px !important;
+    }
+
+    .events-page-card {
+        width: calc(100% - 80px) !important;
+        max-width: 400px !important;
+        padding: 10px !important;
+        flex-shrink: 1 !important;
+    }
+
+    .events-page-flyer img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 0 auto 15px !important;
+    }
+
+    .events-page-info h3 {
+        font-size: 22px !important;
+    }
+
+    .events-page-info p {
+        font-size: 15px !important;
+    }
+
+    .event-arrow {
+        font-size: 28px !important;
+        padding: 5px !important;
+        flex-shrink: 0 !important;
+    }
+}
