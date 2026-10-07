@@ -1162,3 +1162,48 @@ hr {
         flex-shrink: 0 !important;
     }
 }
+
+/* ========================================
+   MOBILE NAVIGATION
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .custom-navbar {
+        width: 100%;
+        min-height: auto;
+        padding: 12px 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        box-sizing: border-box;
+    }
+
+    .nav-brand {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .nav-title {
+        font-size: 26px !important;
+    }
+
+    .custom-nav-links {
+        width: 100%;
+        margin-left: 0;
+        gap: 0;
+        justify-content: space-evenly;
+    }
+
+    .custom-nav-links a {
+        font-size: 18px !important;
+        white-space: nowrap;
+    }
+}
