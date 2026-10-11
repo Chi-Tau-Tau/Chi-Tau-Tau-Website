@@ -300,7 +300,7 @@ Prinston Derosier
 
 ### Fall 2022 - 4 True Testimonies of DeaQon
 
-James Deveauz
+James Deveaux
 
 Ah'mare Lee
 
