@@ -44,13 +44,13 @@ Brian Permenter
 
 Jean Francois
 
-Todd Cleveland
+Todd Cleveland (Omega Chapter)
 
 Mark Nonsant
 
 Larry Tucker
 
-Steve Lane
+Steve Lane (Omega Chapter)
 
 Pat Brinson
 
@@ -58,13 +58,13 @@ Rufus Hall
 
 Rashad Morgan
 
-Kenny Young
+Kenny Young (Omega Chapter)
 
 
 
 ### Spring 2003 - 7 Knights of Discretion
 
-Karthon Lewis III
+Karthon Lewis III (Omega Chapter)
 
 Issa Kwame Gary Sr.
 
@@ -198,7 +198,7 @@ Mikenson Deroche
 
 ### Spring 2017 - 5 Persevering Hellhounds of Reclamation
 
-Reuel Buchanan
+Reuel Buchanan (Omega Chapter)
 
 Richarson Louis
 
