@@ -242,11 +242,11 @@ Jordan Wilson
 
 
 
-### Spring 2020 - 9 Qurantined Souls of ComebaQ
+### Spring 2020 - 9 Quarantined Souls of ComebaQ
 
 Julius Poe IV
 
-Zachary Owns
+Zachary Owens
 
 Khari Jackson
 
