@@ -20,7 +20,7 @@ Travis Johnson
 
 Author Jamison
 
-Jaime Henderson
+Jamey Henderson
 
 Ty Pope
 
@@ -56,7 +56,7 @@ Pat Brinson
 
 Rufus Hall
 
-Rashad Morgan
+Rahshard Morgan
 
 Kenny Young (Omega Chapter)
 
@@ -82,7 +82,7 @@ Von Eric Gordon
 
 ### Fall 2003 - The Dreaded 4
 
-Jerome Shane Williams
+Jerome Ashane Williams
 
 Chester Alphonso Jones Jr.
 
@@ -150,7 +150,7 @@ Derrick Hallman
 
 Jecory Ellis
 
-Jack Carter
+Jackie Carter
 
 Chad Alexander
 
@@ -268,9 +268,9 @@ Deion Perry
 
 Eduardo Paredes Monegro
 
-Luke Coz
+Luke Cox
 
-Person Pierre Jean
+Peterson Pierre Jean
 
 Frederic Freeman III
 
